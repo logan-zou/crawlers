@@ -19,7 +19,7 @@ keywords = [
 
 options = Options()
 options.add_argument("--headless")
-driver = webdriver.Chrome(executable_path=r"D:\tool\chrome_apps\chromedriver.exe",
+driver = webdriver.Chrome(executable_path=r"chromedriver.exe",
                           chrome_options=options)
 
 for key_word in keywords:
@@ -55,7 +55,7 @@ for key_word in keywords:
 
         print("完成第{}页".format(page))
     pd.DataFrame(book_info_lst).to_csv(
-        r"E:\本科科研\网络文学发展分析\数据\起点\第六十周2022.9.26~10.2\{}.csv".format(key_word),
+        r"\起点\第六十周2022.9.26~10.2\{}.csv".format(key_word),
         encoding="utf-8-sig")
 
     print("完成关键词{}".format(key_word))
