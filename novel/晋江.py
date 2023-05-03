@@ -44,7 +44,7 @@ for i in [0,1,2]:#种类分类
             one_book_info["descrip"] = one_book_infos[2].find("a")["rel"]
             book_info_lst.append(one_book_info)
             #print(len(book_info_lst))  
-        pd.DataFrame(book_info_lst).to_csv(r"E:\本科科研\网络文学发展分析\数据\晋江\第五十九周2022.9.26~10.2\{}\{}.csv".format(i, j), encoding="utf-8-sig")
+        pd.DataFrame(book_info_lst).to_csv(r"晋江\第五十九周2022.9.26~10.2\{}\{}.csv".format(i, j), encoding="utf-8-sig")
         print("完成第{}个排行榜".format(j))
     print("完成第{}种分类".format(i))
             
